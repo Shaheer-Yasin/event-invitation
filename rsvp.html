@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event RSVP</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .rsvp-container {
+            width: 60%;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        .rsvp-container h2 {
+            text-align: center;
+        }
+
+        .rsvp-container label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .rsvp-container input,
+        .rsvp-container select,
+        .rsvp-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-family: Verdana;
+        }
+
+        .rsvp-container button {
+            display: block;
+            margin: 25px auto 0;
+            padding: 12px 30px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .rsvp-container button:hover {
+            background-color: rgb(184, 130, 73);
+            color: black;
+        }
+
+        @media (max-width: 600px) {
+            .rsvp-container {
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="venue.html">Venue</a>
+        <a href="rsvp.html">RSVP</a>
+    </nav>
+
+    <h1>EVENT INVITATION</h1>
+
+    <h2>CONFIRM YOUR ATTENDANCE</h2>
+
+    <div class="rsvp-container">
+
+        <h2>RSVP FORM</h2>
+
+        <form onsubmit="showMessage(event)">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="attendance">Will you attend?</label>
+            <select id="attendance" required>
+                <option value="">Select an option</option>
+                <option value="Yes">Yes, I will attend</option>
+                <option value="No">No, I cannot attend</option>
+            </select>
+
+            <label for="guests">Number of Guests:</label>
+            <select id="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <label for="message">Additional Message:</label>
+            <textarea id="message" rows="4"
+            placeholder="Write your message here"></textarea>
+
+            <button type="submit">Submit RSVP</button>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>Thank you for being part of our event!</p>
+        <p>FAST NUCES | 6 November 2026</p>
+    </footer>
+
+    <script>
+        function showMessage(event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var attendance = document.getElementById("attendance").value;
+
+            alert("Thank you, " + name + "! Your response has been recorded: " + attendance);
+        }
+    </script>
+
+</body>
+</html>
