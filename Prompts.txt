@@ -1,0 +1,12 @@
+Prompt 1: Create schedule.html for my event invitation website. Use the same navigation bar,
+footer and style.css as index.html. Show relevant information as per index
+Result: successfully created page 2 for schedule and navigation bar.
+Prompt 2: i want to add navigation bar to index.html file too.
+Result: It added navigation bar to index file also.
+Prompt 3: now give me code for venue.html with pictures of fast nu islamabad in it
+Result: It made the venue page and also added the navigation bar in it.
+Prompt 4: now give me code for rsvp.html and design it in accordance with other pages
+Result: Last page that was rsvp is created with navigation bar and with a attendance form.
+Prompt 5: give me code for myt index.html because it ressembles much with schedule page and i want to make it like a cover page with a pic of fast nu and keep navigation bar included
+Result: Updated my index file with some necessary changes in it.
+
