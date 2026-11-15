@@ -1,36 +1,129 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+    <title>Event Invitation - Home</title>
+    <link rel="stylesheet" href="style.css">
 
-<title>invitation</title>
+    <style>
+        .cover {
+            text-align: center;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .cover h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .cover p {
+            font-size: 18px;
+        }
+
+        .campus-image {
+            width: 85%;
+            max-width: 900px;
+            height: 400px;
+            object-fit: cover;
+            border: 5px solid black;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        .welcome {
+            background-color: white;
+            width: 75%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .cover-buttons {
+            margin: 25px;
+        }
+
+        .cover-buttons a {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 8px;
+            border-radius: 5px;
+        }
+
+        .cover-buttons a:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        @media (max-width: 600px) {
+            .campus-image {
+                width: 95%;
+                height: 250px;
+            }
+
+            .welcome {
+                width: 85%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>------------------------EVENT INVITATION--------------------</h1>
-<h3>DATE:</h3>
-<p>6th NOVEMBER, 2026.</p>
-<h3>TIME:</h3>
-<p>12 PM.</p>
-<h3>VENUE:</h3>
-<p>FAST NUCES.</p>
-<h3>SCHEDULE:</h3>
-<img src = "https://miro.medium.com/1*uJnyVXIn9RZI1DyRtbc1-g.jpeg" width = "150">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="venue.html">Venue</a>
+        <a href="rsvp.html">RSVP</a>
+    </nav>
 
-<table>
-  <tr>
-    <th>TIME</th>
-    <th>EVENT PLACE</th>
-  </tr>
-  <tr>
-    <td>12 PM</td>
-    <td>IT LAB 2</td>
-  </tr>
-  <tr>
-    <td>2 PM</td>
-    <td>CS LAWN</td>
-    </tr>
-</table>
- 
+    <div class="cover">
+
+        <h1>EVENT INVITATION</h1>
+
+        <h2>YOU ARE INVITED!</h2>
+
+        <img class="campus-image"
+        src="https://isb.nu.edu.pk/new/assets/img/education/fsm-photo-3.webp"
+        alt="FAST NUCES Islamabad Campus">
+
+        <div class="welcome">
+
+            <h2>WELCOME TO OUR EVENT</h2>
+
+            <p>
+                Join us for a memorable event at
+                FAST National University of Computer
+                and Emerging Sciences, Islamabad.
+            </p>
+
+            <h3>DATE: 6th NOVEMBER, 2026</h3>
+
+            <h3>TIME: 12 PM</h3>
+
+            <h3>VENUE: FAST NUCES ISLAMABAD</h3>
+
+        </div>
+
+        <div class="cover-buttons">
+
+            <a href="schedule.html">View Schedule</a>
+
+            <a href="rsvp.html">Confirm Attendance</a>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Thank you for being part of our event!</p>
+        <p>FAST NUCES | 6 November 2026</p>
+    </footer>
+
 </body>
 </html>
